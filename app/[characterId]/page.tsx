@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 // @jsxRuntime classic
 // @jsxFrag React.Fragment
 // @ts-nocheck
@@ -54,10 +55,18 @@ export default function CharacterDetail({ params: { characterId } }: params) {
                   className="h-52 w-48 bg-cover rounded-lg"
                 />
               ) : (
-                <div className="h-52 w-48 flex items-center justify-center bg-gray-200 text-black rounded-lg">
-                  No Image Available
-                </div>
+                <div className="h-full w-full flex items-center justify-center rounded-lg text-black">
+              
+                <img
+                  src="/man.jpg"
+                  alt="Default Image"
+                  width={256}
+                  height={256}
+                />
+              </div>
+
               )}
+              <br />
               <div>House: {char.house}</div>
               <div>
                 Wand: {char.wand.wood}, {char.wand.core}

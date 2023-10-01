@@ -10,3 +10,5 @@ export const getCharacters =async() =>{
        return error;
    }
    }
+
+   
